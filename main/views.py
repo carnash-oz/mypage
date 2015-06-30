@@ -1,11 +1,21 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views.generic import View
 
 
-# Create your views here.
-def index(request):
-    # return HttpResponse('Hello from Python!')
-    return render(request, 'index.html')
+class HomeView(View):
+	template_name = "index.html"
 
+	def get(self, request, *args, **kwargs):
+		return render(request, self.template_name)
 
+class CvView(View):
+	template_name = "cv.html"
 
+	def get(self, request, *args, **kwargs):
+		return render(request, self.template_name)
+
+class GamingView(View):
+	template_name = "gaming.html"
+
+	def get(self, request, *args, **kwargs):
+		return render(request, self.template_name)
