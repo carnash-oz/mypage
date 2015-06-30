@@ -1,9 +1,9 @@
 from django.conf.urls import patterns, include, url
-
 from django.contrib import admin
-admin.autodiscover()
 
-import main.views
+from main.views import *
+
+admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', HomeView.as_view(), name='index'),
