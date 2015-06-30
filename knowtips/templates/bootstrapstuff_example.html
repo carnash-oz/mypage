@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>More Stuff</h1>
+<a href="/tips/bootstrap">back</a>
+
+<div class="container-fluid">
+	
+	<p>This is the <mark>blockquote</mark> utility</p>
+	<blockquote>
+		<p>The only winner was who participe in the contest.</p>
+		<footer>Some anime character</footer>
+	</blockquote>
+
+	<h4>Title of list</h4>
+	<dl>
+		<dt>Subtitle of the list</dt>
+			<dd>- Item of the list</dd>
+			<dd>- Item of the list</dd>
+			<dd>- Item of the list</dd>
+			<dd>- Item of the list</dd>
+	</dl>
+
+	<p>This is the <mark>mark</mark> tag</p>
+	<p>This is the <code>code</code> tag</p>
+
+	<p>How set a bunch of lines</p>
+	<pre>
+if(idiots.stillAlive())
+	KillIt();
+
+print('World is clean now');
+	</pre>
+
+	<h4>Color Tags</h4>
+	<p class="text-muted">Text Muted</p>
+	<p class="text-success">Text Success</p>
+	<p class="text-danger">Text Danger</p>
+
+	<p class="bg-success">Background Text Success</p>
+	<p class="bg-danger">Background Text Danger</p>
+
+	<h2>Normal Tables</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Score</th>
+			<tr>
+		</thead>	
+		<tbody>
+			<tr>
+				<td>JP</td>
+				<td>25</td>
+				<td>3,422</td>
+			</tr>
+			<tr>
+				<td>Dude</td>
+				<td>21</td>
+				<td>1,536</td>
+			</tr>
+		</tbody>		
+	</table>
+
+	<h2>Stripe Tables</h2>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Score</th>
+			<tr>
+		</thead>	
+		<tbody>
+			<tr>
+				<td>JP</td>
+				<td>25</td>
+				<td>3,422</td>
+			</tr>
+			<tr>
+				<td>Dude</td>
+				<td>21</td>
+				<td>1,536</td>
+			</tr>
+		</tbody>		
+	</table>
+
+</div>
+
+<div class="container-fluid">
+	<h2>Well Types</h2>
+	<div class="well">Basic Well</div>
+	<div class="well well-sm">Small Well</div>
+
+	<div class="alert alert-success">Alert Success</div>
+	<div class="alert alert-info">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Alert info with close button
+	</div>
+
+	<div class="alert alert-danger fade in">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Alert info with close button with fade out
+	</div>
+
+</div>
+
+{% endblock %}

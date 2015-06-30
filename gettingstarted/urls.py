@@ -10,4 +10,6 @@ urlpatterns = patterns('',
     url(r'^cv/$', CvView.as_view(), name='cv'),
     url(r'^gaming/$', GamingView.as_view(), name='gaming'),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^tips/', include('knowtips.urls')),
+    url(r'^work/', include('mywork.urls')),
 )

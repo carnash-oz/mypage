@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Sidebar Toggle Example</h1>
+<a href="/tips/bootstrap">back</a>
+	
+<div id="wrapper">
+
+	<!--SIDEBAR-->
+
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			<li><a href="/tips/bootstrap/sidebar_example">Add text here</li>
+			<li><a href="/tips/bootstrap/sidebar_example">Add text here</li>
+			<li><a href="/tips/bootstrap/sidebar_example">Add text here</li>
+		</ul>
+	</div>
+
+	<!--CONTENT-->
+	<div id="page-content-wrapper">
+		<div class="continer-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<a href="@" class="btn btn-success" id="menu-toggle">Toggle Menu "Push me"</a>
+					<h1>Add text here</h1>
+					<p>Add text here</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MENU TOGGLE -->
+	<script type="text/javascript">
+		$("#menu-toggle").click(function (e){
+			e.preventDefault();
+			$("#wrapper").toggleClass("menuDisplayed");
+		});
+	</script>
+</div>
+
+{% endblock %}
