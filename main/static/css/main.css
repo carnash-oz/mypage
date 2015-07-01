@@ -1,3 +1,17 @@
+/* MAIN PAGE */
+
+.back-page{
+	background-color: #81BEF7;
+}
+
+.section-container{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#footer{
+	text-align: center;
+}
 /* BOOTSTRAP TIPS STYLES */
 
 
