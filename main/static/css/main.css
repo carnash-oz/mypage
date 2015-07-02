@@ -38,6 +38,10 @@ img.element-center{
     margin-right: auto
 }
 
+.element-align{
+	margin: 0 auto;
+}
+
 /* CV PAGE */
 
 .perc-img{
