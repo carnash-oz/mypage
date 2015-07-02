@@ -1,12 +1,85 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block content %}
-	
-<div class="container-fluid">
-		
-	<h2>Gaming</h2>
-	<p>Still working...</p>
 
+<style type="text/css">
+	body{
+		background: url('{% static 'img/parralax-game.png' %}') no-repeat center center fixed;
+		background-size: cover;
+
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	}
+</style>
+	
+<div class="container-fluid color-gray section-container">
+		
+	
+	<div class='col-sm-4'>
+		<div class="row">
+			<img src="{% static 'img/carnash.jpg' %}" class="img-responsive img-circle" width="220" height="220">
+		</div>
+		<div class="row">
+			<h2 class="game-text">Carnash_oz</h2>
+		</div>
+	</div>
+
+	<div class='col-sm-8'>
+		<blockquote>
+			<p class="game-text">Tantos juegos, tan poco tiempo :'(</p>
+			<footer class="game-text-alt">Dicho por mi al conseguir mis 5MB de internet</footer>
+		</blockquote>
+	</div>
+	
+</div>
+
+<div class="container-fluid color-red section-container">
+
+	<div class='col-sm-8'>
+		<blockquote>
+			<p>My Rig</p>
+			<footer class="game-text-alt">Intel i5-3570K @ 4.5GHz</footer>
+			<footer class="game-text-alt">Cooler Hyper 212 Evo</footer>
+			<footer class="game-text-alt">Strix GTX 970 4GB GDDR5</footer>
+			<footer class="game-text-alt">2 x 128GB SSD Kingston Raid 0 (boot)</footer>
+			<footer class="game-text-alt">2 x 4GB DDR3 1333mHz</footer>
+			<footer class="game-text-alt">Case Thermaltake Commander II Snow edition</footer>
+			<footer class="game-text-alt">PSU Thermaltake TR2 500W</footer>
+		</blockquote>
+	</div>
+
+	<div class='col-sm-4'>
+		<img src="{% static 'img/pc-icon.svg' %}" class="img-responsive" width="220" height="220">
+	</div>
+
+</div>
+
+<div class="container-fluid parallax-div"></div>
+
+<div class="container-fluid section-container color-white">
+
+		<div class="well col-xs-6 col-md-3 element-center">
+			<img src="{% static 'img/steam-icon.ico' %}" class="img-responsive element-center" width="50" height="50">
+			<a href="http://steamcommunity.com/profiles/76561198004713816">Carnash_oz</a>
+		</div>
+
+		<div class="well col-xs-6 col-md-3 element-center">
+			<img src="{% static 'img/origin-icon.ico' %}" class="img-responsive element-center" width="50" height="50">
+			<a>carnash_oz</a>
+		</div>
+
+		<div class="well col-xs-6 col-md-3 element-center">
+			<img src="{% static 'img/gog-icon.png' %}" class="img-responsive element-center" width="50" height="50">
+			<a>Carnash.oz</a>
+		</div>
+
+		<div class="well col-xs-6 col-md-3 element-center">
+			<img src="{% static 'img/dota-icon.png' %}" class="img-responsive element-center" width="50" height="50">
+			<a href="http://www.dotabuff.com/players/44448088">Carnash_oz</a>
+		</div>
+		
 </div>
 
 {% endblock %}

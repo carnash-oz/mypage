@@ -1,16 +1,77 @@
+/* GENERAL */
+
+body { 
+	padding-top: 50px; 
+}
+
+nav.navbar.navbar-default{
+	margin-bottom: 0;
+}
+
+.color-black{
+	background: black;
+}
+
+.color-gray{
+	background: #1C1C1C;
+}
+
+.color-ces{
+	background-color: #2E9AFE;
+}
+
+.color-red{
+	background-color: red;
+}
+
+.color-white{
+	background-color: white;
+}
+
+.element-center{
+	text-align: center;
+}
+
+img.element-center{
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* CV PAGE */
+
+.perc-img{
+	width: 60%;
+}
+
+/* GAMING PAGE */
+
+.game-text{
+	color: red; 
+}
+
+.game-text-alt{
+	color: white; 
+}
+
+.parallax-div{
+	height: 250px;
+}
+
 /* MAIN PAGE */
 
-.back-page{
-	background-color: #81BEF7;
+.clean-container{
+	padding: 0;
 }
 
 .section-container{
 	padding-top: 20px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 
 #footer{
 	text-align: center;
+	background-color: #F2F2F2;
 }
 /* BOOTSTRAP TIPS STYLES */
 
