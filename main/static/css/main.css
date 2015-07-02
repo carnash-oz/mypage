@@ -42,11 +42,13 @@ img.element-center{
 	margin: 0 auto;
 }
 
+#footer-min-text{
+	font-size: 0.8em;
+	color: #777;
+}
+
 /* CV PAGE */
 
-.perc-img{
-	width: 60%;
-}
 
 /* GAMING PAGE */
 
